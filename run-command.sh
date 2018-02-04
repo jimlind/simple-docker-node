@@ -1,3 +1,5 @@
 #!/bin/sh
-docker build -t simple-docker-nodejs .
-docker run -t -w /src simple-docker-nodejs node print.js
+name="simple-docker-nodejs"
+
+docker build -t $name .
+docker run -t -w /src $name node print.js
